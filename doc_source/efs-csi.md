@@ -425,10 +425,10 @@ This procedure uses the [Dynamic Provisioning](https://github.com/kubernetes-sig
 
 1. Create a storage class for EFS\. For all parameters and configuration options, see [Amazon EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver) on GitHub\.
 
-   1. Retrieve your Amazon EFS file system ID\. You can find this in the Amazon EFS console, or use the following AWS CLI command\.
+   1. Retrieve your Amazon EFS file system ID\. 
 
       ```
-      aws efs describe-file-systems --query "FileSystems[*].FileSystemId" --output text
+      echo $file_system_id
       ```
 
       The example output is as follows\.
